@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Bloqueos seguros (solo si existieran en tu hosting, no afectan a tu web)
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /internal/
+
+# Evitar rastreo de archivos innecesarios
+Disallow: /*.json$
+Disallow: /*.conf$
+Disallow: /node_modules/
+Disallow: /templates/
+Disallow: /code/
+Disallow: /views/
+
+# Sitemap principal
+Sitemap: https://parismarchena.es/sitemap.xml
